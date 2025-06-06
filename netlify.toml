@@ -1,5 +1,5 @@
 [build]
-  command = "npm run client-install && npm run build --prefix client"
+  command = "NODE_OPTIONS=--max_old_space_size=4096 pnpm install && pnpm run build"
   publish = "client/build"
 
 [[redirects]]
